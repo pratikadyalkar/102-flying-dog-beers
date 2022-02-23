@@ -61,7 +61,7 @@ app.layout = html.Div(children=[
     html.h3('IBU'),
     html.A(descriptionibu),
     html.h3('ABV'),
-    html.A(descriptionabv)
+    html.A(descriptionabv),
     html.A('Code on Github', href=githublink),
     html.Br(),
     html.A('Data Source', href=sourceurl),
