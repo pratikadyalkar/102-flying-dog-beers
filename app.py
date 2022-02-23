@@ -14,6 +14,11 @@ tabtitle='beer!'
 myheading='Flying Dog Beers'
 label1='IBU'
 label2='ABV'
+descriptionibu = '''IBU stands for International Bitterness Units, a scale to gauge the level of a beer's bitterness. 
+More specifically, IBUs measure the parts per million of isohumulone from hops in a beer, which gives beer bitterness.'''
+descriptionabv = '''Alcohol by volume (abbreviated as ABV, abv, or alc/vol) is a standard measure of how much alcohol (ethanol) is contained in a given volume of an alcoholic beverage (expressed as a volume percent).
+It is defined as the number of millilitres (mL) of pure ethanol present in 100 ml 
+'''
 githublink='https://github.com/pratikadyalkar/102-flying-dog-beers'
 sourceurl='https://www.flyingdog.com/beers/'
 
@@ -53,6 +58,10 @@ app.layout = html.Div(children=[
         id='flyingdog',
         figure=beer_fig
     ),
+    html.h3('IBU'),
+    html.A(descriptionibu),
+    html.h3('ABV'),
+    html.A(descriptionabv)
     html.A('Code on Github', href=githublink),
     html.Br(),
     html.A('Data Source', href=sourceurl),
